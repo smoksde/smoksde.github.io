@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Tutoring | Your Name</title>
+  <meta name="description" content="Private tutoring in math, science, and exam prep. Personalized, effective, and friendly." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 5rem 1.5rem 4rem;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 650px;
+      margin: auto;
+    }
+
+    section {
+      padding: 3.5rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: radial-gradient(1200px circle at top left, #1f2937, var(--card));
+      border-radius: 1.25rem;
+      padding: 2rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.9rem 1.4rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      color: #020617;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(56,189,248,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 40px rgba(56,189,248,0.45);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Private Tutoring That Actually Clicks</h1>
+    <p>
+      One-on-one tutoring in math, science, and exam prep.
+      Clear explanations, tailored lessons, and real progress.
+    </p>
+    <div class="cta">
+      <a class="button" href="#contact">Get in Touch</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>What I Offer</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Personalized Lessons</h3>
+        <p class="muted">Every session is tailored to the student’s goals, pace, and learning style.</p>
+      </div>
+      <div class="card">
+        <h3>Clear Explanations</h3>
+        <p class="muted">Concepts broken down simply, with intuition first and rigor second.</p>
+      </div>
+      <div class="card">
+        <h3>Exam & Homework Help</h3>
+        <p class="muted">Support for school exams, standardized tests, and tricky assignments.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+      <h2>About Me</h2>
+      <p class="muted">
+        I’m a private tutor with experience helping students build confidence
+        and mastery in challenging subjects. My focus is not just better grades,
+        but deeper understanding and independent problem-solving skills.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p class="muted" style="text-align:center; max-width:600px; margin:auto;">
+        Interested in working together? Email me or send a message and we’ll
+        set up a quick call to see if it’s a good fit.
+      </p>
+      <div class="cta">
+        <a class="button" href="mailto:your.email@example.com">Email Me</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Your Name · Private Tutoring
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
